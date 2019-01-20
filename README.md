@@ -4,8 +4,6 @@ A simple plugin that adds the tawk live chat window [https://dashboard.tawk.to/#
 
 sign up for a free account at [https://www.tawk.to/]
 
-
-
 ## How to use
 
 1. Install using either npm or yarn:
@@ -20,7 +18,7 @@ or
 npm install gatsby-plugin-tawk
 ```
 
-2. Add to ```gatsby-config.js```
+2. Add to `gatsby-config.js`
 
 ```javascript
 module.exports = {
@@ -29,9 +27,10 @@ module.exports = {
       resolve: `gatsby-plugin-tawk`,
       options: {
         tawkId: "YOUR_TAWK_ID",
+        widgetId: "YOUR_WIDGET_ID" // optional, will use 'default' otherwise
         // get this from the tawk script widget
-      },
-    },
-  ],
+      }
+    }
+  ]
 };
 ```
