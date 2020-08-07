@@ -14,6 +14,6 @@ exports.onRenderBody = function (_ref, pluginOptions) {
     key: "gatsby-plugin-tawk",
     async: true,
     src: "https://embed.tawk.to/" + tawkId + "/default",
-    charset: 'UTF-8'
+    charSet: 'UTF-8'
   })]);
 };
