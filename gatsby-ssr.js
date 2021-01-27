@@ -8,12 +8,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.onRenderBody = function (_ref, pluginOptions) {
   var setPostBodyComponents = _ref.setPostBodyComponents;
-  var tawkId = pluginOptions.tawkId
+  var tawkId = pluginOptions.tawkId;
+  var widgetId = pluginOptions.widgetId || "default";
+  var source = "https://embed.tawk.to/" + tawkId + "/" + widgetId;
 
   return setPostBodyComponents([_react2.default.createElement("script", {
     key: "gatsby-plugin-tawk",
     async: true,
-    src: "https://embed.tawk.to/" + tawkId + "/default",
+    src: source,
     charset: 'UTF-8'
   })]);
 };
